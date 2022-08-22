@@ -1,8 +1,15 @@
+function inputFieldValue(idName) {
+    const inputField = document.getElementById(idName);
+    const inputFieldValueString = inputField.value;
+    const inputFieldValue = parseInt(inputFieldValueString);
+    return inputFieldValue;
+}
 document.getElementById('perPlayerCalculateButton').addEventListener('click', function () {
-    const perPlayerInputField = document.getElementById('perPlayerBudget');
-    const perPlayerInputFieldValue = perPlayerInputField.value;
-    const perPlayerBudget = parseInt(perPlayerInputFieldValue);
-    const playerExpenses = perPlayerBudget * 5;
+    const playerExpenses = inputFieldValue('perPlayerBudget') * 5;
     document.getElementById('playerExpenses').innerText = playerExpenses;
-    document.getElementById('perPlayerBudget').value = '';
+})
+document.getElementById('totalCalculateButton').addEventListener('click', function () {
+    const total = inputFieldValue('perPlayerBudget') * 5 + inputFieldValue('managerCost') + inputFieldValue('coachCost');
+    console.log(total);
+    document.getElementById('total').innerText = total;
 })
