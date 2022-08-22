@@ -9,10 +9,66 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-zinc-900">
     <header>
-        <h1>Please Select Your Best Five Players</h1>
+        <h1 class="text-5xl text-zinc-50 text-center p-24">Please Select Your Best Five Players</h1>
     </header>
+    <main>
+        <section class="text-zinc-50 p-24">
+            <div class="grid grid-cols-4 gap-6">
+                <div>
+                    <img class="h-60 w-56" src="images/Mohamed Salah.jpeg" alt="">
+                    <h3 class="text-xl">Mohamed Salah</h3>
+                    <p class="text-xs py-1">36 Goals | 120 Assist</p>
+                    <button id="selectButton1" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                        disabled="disabled">Select</button>
+                </div>
+                <div>
+                    <img class="h-60 w-56" src="images/Lionel Messi.jpeg" alt="">
+                    <h3 class="text-xl">Lionel Messi</h3>
+                    <p class="text-xs py-1">36 Goals | 120 Assist</p>
+                    <button id="selectButton2" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                        disabled="disabled">Select</button>
+                </div>
+                <div>
+                    <img class="h-60 w-56" src="images/Neymar.jpeg" alt="">
+                    <h3 class="text-xl">Neymar</h3>
+                    <p class="text-xs py-1">36 Goals | 120 Assist</p>
+                    <button id="selectButton3" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                        disabled="disabled">Select</button>
+                </div>
+                <div class="border-slate-300 rounded border-solid border text-center">
+                    <h3 class="text-4xl pb-6">Selected Five</h3>
+                    <ul class="list-decimal pb-2">
+                    </ul>
+                </div>
+                <div>
+                    <img class="h-60 w-56" src="images/Cristiano Ronaldo.jpeg" alt="">
+                    <h3 class="text-xl">Cristiano Ronaldo</h3>
+                    <p class="text-xs py-1">36 Goals | 120 Assist</p>
+                    <button id="selectButton4" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                        disabled="disabled">Select</button>
+                </div>
+                <div>
+                    <img class="h-60 w-56" src="images/Kylian Mbappé.jpeg" alt="">
+                    <h3 class="text-xl">Kylian Mbappé</h3>
+                    <p class="text-xs py-1">36 Goals | 120 Assist</p>
+                    <button id="selectButton5" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                        disabled="disabled">Select</button>
+                </div>
+                <div>
+                    <img class="h-60 w-56" src="images/Sergio Ramos.jpeg" alt="">
+                    <h3 class="text-xl">Sergio Ramos</h3>
+                    <p class="text-xs py-1">36 Goals | 120 Assist</p>
+                    <button id="selectButton6" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                        disabled="disabled">Select</button>
+                </div>
+
+                <div class="bg-red-200">3</div>
+            </div>
+
+        </section>
+    </main>
     <script src="js/utilities.js"></script>
 </body>
 
