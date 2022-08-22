@@ -14,7 +14,6 @@ function getTextValueByID(idName) {
 }
 function setTextOnTheList(idName, playerName) {
     const list = document.getElementById(idName);
-    // console.log(list.childElementCount)
     if (list.childElementCount < 5) {
         const entry = document.createElement('li');
         entry.appendChild(document.createTextNode(playerName));
