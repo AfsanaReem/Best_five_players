@@ -10,6 +10,5 @@ document.getElementById('perPlayerCalculateButton').addEventListener('click', fu
 })
 document.getElementById('totalCalculateButton').addEventListener('click', function () {
     const total = inputFieldValue('perPlayerBudget') * 5 + inputFieldValue('managerCost') + inputFieldValue('coachCost');
-    console.log(total);
     document.getElementById('total').innerText = total;
 })
