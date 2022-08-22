@@ -58,7 +58,26 @@
                     <button id="selectButton6" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1">Select</button>
                 </div>
 
-                <div class="bg-red-200">3</div>
+                <div class="border-slate-300 rounded border-solid border text-center">
+                    <h3 class="text-4xl pb-6">Budget</h3>
+                    <form>
+                        <label>Per Player</label>
+                        <input type="text" id="perPlayerBudget"
+                            class="bg-transparent border border-slate-200 w-40"><br><br>
+                        <button id="perPlayerCalculateButton" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                            type="button">Calculate</button><br><br>
+                        <h4>Player Expenses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $<span id="playerExpenses">00</span>
+                        </h4><br>
+                        <label>Manager</label>
+                        <input type="text" id="managerCost" class="bg-transparent border border-slate-200 w-40"><br><br>
+                        <label>Coach</label>
+                        <input type="text" id="coachCost" class="bg-transparent border border-slate-200 w-40"><br><br>
+                        <button id="totalCalculateButton" class="rounded-lg bg-sky-500 hover:bg-sky-700 px-8 py-1"
+                            type="button">Calculate Total</button><br><br>
+                        <h4>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span>00</span>
+                        </h4><br>
+                    </form>
+                </div>
             </div>
 
         </section>
